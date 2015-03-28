@@ -1,0 +1,19 @@
+<html>
+<head>
+<script type="text/javascript">
+function pdate()
+{
+d=new Date();
+var dd=d.getDate();
+var mm=d.getMonth()+1;
+var yy=d.getFullYear();
+var str="date is"+dd+"/"+mm+"/"+yy+" "+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+document.getElementById("demo").innerHTML=str;
+}
+</script>
+</head>
+<body>
+<input type=submit value="submit" onClick=pdate()>
+<p id="demo"></p>
+</body>
+</html>
